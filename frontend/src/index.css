@@ -1,0 +1,249 @@
+/* ======== RESET GENERAL ======== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  line-height: 1.6;
+  background-color: #ffffff;
+  color: #333;
+  margin: 0 auto;
+}
+
+img {
+  width: 200px;
+  margin: 0 auto;
+  padding: 2rem 1rem;
+}
+
+.Logo {
+  width: 500px;
+  margin: 0 auto;
+  padding: 2rem 1rem;
+}
+
+/* ======== CONTENEDOR GENERAL ======== */
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem 1rem;
+}
+
+/* ======== NAVBAR ======== */
+header {
+  background-color: #800040;
+  padding: 1rem 0;
+}
+
+nav {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  margin: 0.2rem 0.2rem;
+  font-weight: 600;
+  transition: color 0.3s;
+}
+
+nav a:hover {
+  color: #D4AF37;
+}
+
+/* ======== SECCIONES ======== */
+section {
+  text-align: center;
+  padding: 3rem 1rem;
+  border-bottom: 1px solid #f5f5f5;
+}
+
+section h2 {
+  color: #D4AF37;
+  margin-bottom: 1rem;
+}
+
+iframe {
+  width: 100%;
+  max-width: 600px;
+  height: 340px;
+  border: none;
+}
+
+/* ======== GALERÍA ======== */
+.gallery {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.gallery div {
+  width: 400px;
+  text-align: center;
+}
+
+.img-gallery1
+{
+  width: 100%;
+  border: 1px solid #800040;
+  border-radius: 20px;
+  padding: 0px;
+}
+
+.img-gallery2
+{
+  width: 17%;
+  border: 1px solid #800040;
+  border-radius: 20px;
+  padding: 0px;
+}
+
+.video-gallery {
+  width: 360px; 
+  height: 255px;
+  border: 1px solid #800040;
+  border-radius: 20px;
+}
+
+.gallery p {
+  margin-top: 10px;
+  font-weight: 600;
+}
+
+/* ======== TABLAS ======== */
+table {
+  width: 90%;
+  margin: 2rem auto;
+  border-collapse: collapse;
+  background-color: #ffffff;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
+  border-radius: 8px;
+  overflow: hidden;
+  text-align: center;
+}
+
+#table1 {
+  width: 70%;
+  background-color: #ffffff;
+}
+
+th,
+td {
+  padding: 0.8rem;
+  border-bottom: 1px solid #ffffff;
+}
+
+th {
+  background-color: #800040;
+  color: white;
+  font-weight: bold;
+}
+
+tr:nth-child(even) {
+  background-color: #f5f5f5;
+}
+
+/* ======== FORMULARIO ======== */
+form {
+  max-width: 600px;
+  margin: 0 auto;
+  text-align: left;
+}
+
+form input,
+form textarea {
+  width: 100%;
+  padding: 0.8rem;
+  margin-bottom: 1rem;
+  border: 1px solid #f5f5f5;
+  border-radius: 6px;
+}
+
+form button {
+  display: block;
+  width: 100%;
+  background-color: #800040;
+  color: white;
+  border: none;
+  padding: 1rem;
+  border-radius: 6px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+form button:hover {
+  background-color: #D4AF37;
+}
+
+/* ======== FOOTER ======== */
+footer {
+  background-color: #800040;
+  color: white;
+  text-align: center;
+  padding: 1rem;
+  font-size: 0.9rem;
+}
+
+/* ======== RESPONSIVE DESIGN ======== */
+@media (max-width: 768px) {
+
+  header {
+    text-align: center;
+  }
+
+  nav {
+    flex-direction: column;
+  }
+
+  nav a {
+    margin: 0.5rem 0;
+  }
+
+  iframe {
+    width: 250px;
+  }
+
+  .container {
+    width: 95%;
+  }
+
+  table {
+    width: 100%;
+    font-size: 0.9rem;
+  }
+
+  th,
+  td {
+    padding: 0.6rem;
+  }
+
+  .gallery div {
+    width: 100%;
+  }
+}
+
+@media (max-width: 480px) {
+  body {
+    font-size: 0.95rem;
+  }
+
+  section {
+    padding: 2rem 0.5rem;
+  }
+
+  form button {
+    font-size: 0.9rem;
+  }
+
+  table {
+    font-size: 0.85rem;
+  }
+}
