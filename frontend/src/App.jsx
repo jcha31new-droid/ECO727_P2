@@ -3,7 +3,7 @@ import HeroSection from './components/HeroSection';
 import Services from './components/Services';
 import Gallery from './components/Gallery';
 import Testimonials from './components/Testimonials';
-import ContactForm from './components/ContactForm';
+import Comentarios from './components/ComentariosList';
 import Footer from './components/Footer';
 
 function App() {
@@ -50,7 +50,7 @@ function App() {
       <Services />
       <Gallery />
       <Testimonials />
-      <ContactForm />
+      <Comentarios />
       <Footer />
     </>
   );
