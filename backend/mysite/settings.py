@@ -122,7 +122,7 @@ STATIC_ROOT = BASE_DIR / 'staticfiles'
 # CORS
 CORS_ALLOWED_ORIGINS = [
     "http://localhost:5173",
-    "https://eco727p2.netlify.app/",
+    "https://eco727p2.netlify.app",
 ]
 
 
