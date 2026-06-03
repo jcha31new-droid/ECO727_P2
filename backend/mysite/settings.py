@@ -86,23 +86,11 @@ WSGI_APPLICATION = 'mysite.wsgi.application'
 
 
 # DATABASE (MYSQL RAILWAY)
-DATABASE_URL = os.environ.get("MYSQL_URL")
-
-if DATABASE_URL:
-    DATABASES = {
-        'default': dj_database_url.parse(DATABASE_URL)
-    }
-else:
-    DATABASES = {
-        'default': {
-            'ENGINE': 'django.db.backends.sqlite3',
-            'NAME': BASE_DIR / 'db.sqlite3',
-        }
-    }
-
-
-
-
+DATABASES = {
+    'default': dj_database_url.parse(
+        os.environ.get("MYSQL_URL", "")
+    )
+}
 
 # PASSWORD VALIDATION
 AUTH_PASSWORD_VALIDATORS = [
@@ -134,7 +122,7 @@ STATIC_ROOT = BASE_DIR / 'staticfiles'
 # CORS
 CORS_ALLOWED_ORIGINS = [
     "http://localhost:5173",
-    "https://eco727-p2.netlify.app",
+    "https://eco727p2.netlify.app/",
 ]
 
 
