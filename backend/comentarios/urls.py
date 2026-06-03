@@ -5,5 +5,6 @@ from .views import ComentariosViewSet
 router = routers.DefaultRouter()
 router.register(r'comentarios', ComentariosViewSet)
 
+urlpatterns = router.urls
 
 
