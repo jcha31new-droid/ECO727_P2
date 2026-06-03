@@ -60,18 +60,18 @@ function ComentariosList() {
     };
 
     // Cargar datos en el formulario para editar
-    const handleEdit = (comentario) => {
-        setEditandoId(comentario.id);
+    const handleEdit = (comentarios) => {
+        setEditandoId(comentarios.id);
         setFormData({
-            nombre: comentario.nombre,
-            genero: comentario.genero,
-            fecha: comentario.fecha,
-            grado: comentario.grado,
-            grupo: comentario.grupo,
-            turno: comentario.turno,
-            materia: comentario.materia,
-            docente: comentario.docente,
-            comentario: comentario.comentario,
+            nombre: comentarios.nombre,
+            genero: comentarios.genero,
+            fecha: comentarios.fecha,
+            grado: comentarios.grado,
+            grupo: comentarios.grupo,
+            turno: comentarios.turno,
+            materia: comentarios.materia,
+            docente: comentarios.docente,
+            comentario: comentarios.comentario,
         });
     };
 
@@ -89,9 +89,9 @@ function ComentariosList() {
                 onSubmit={(e) => {
                     e.preventDefault();
                     if (editandoId) {
-                        updateComentario(editandoId);
+                        updateComentarios(editandoId);
                     } else {
-                        createComentario();
+                        createComentarios();
                     }
                 }}
             >
