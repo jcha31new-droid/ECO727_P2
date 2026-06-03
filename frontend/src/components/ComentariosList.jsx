@@ -160,7 +160,7 @@ function ComentariosList() {
                                     <button
                                         onClick={() => {
                                             if (window.confirm(`¿Estás seguro de que deseas eliminar "${c.comentario}"?`)) {
-                                                deleteComentario(c.id);
+                                                deleteComentarios(c.id);
                                             }
                                         }}
                                     >
